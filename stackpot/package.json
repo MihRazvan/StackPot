@@ -1,23 +1,23 @@
-
 {
-  "name": "stackpot-tests",
+  "name": "stackpot",
   "version": "1.0.0",
-  "description": "Run unit tests on this project.",
-  "type": "module",
+  "description": "No-loss lottery on Stacks",
   "private": true,
   "scripts": {
     "test": "vitest run",
-    "test:report": "vitest run -- --coverage --costs",
-    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@hirosystems/clarinet-sdk": "^3.6.0",
-    "@types/node": "^24.4.0",
-    "@stacks/transactions": "^7.2.0",
-    "chokidar-cli": "^3.0.0",
-    "vitest": "^3.2.4",
-    "vitest-environment-clarinet": "^2.3.0"
-  }
+  "devDependencies": {
+    "@hirosystems/clarinet-sdk": "^2.6.0",
+    "@stacks/network": "^6.13.0",
+    "@stacks/transactions": "^6.13.1",
+    "@types/node": "^20.11.17",
+    "@vitest/ui": "^1.3.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.1",
+    "vitest": "^1.3.0"
+  },
+  "type": "module"
 }
