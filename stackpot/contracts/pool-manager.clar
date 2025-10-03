@@ -87,8 +87,8 @@
     (asserts! (> amount u0) ERR_ZERO_AMOUNT)
     (asserts! (>= current-balance amount) ERR_INSUFFICIENT_BALANCE)
     
-    ;; Transfer STX from contract to sender
-    (match (as-contract (stx-transfer? amount tx-sender tx-sender))
+    ;; Transfer STX from contract to sender - FIXED LINE
+    (match (as-contract (stx-transfer? amount (as-contract tx-sender) tx-sender))
       success
         (begin
           ;; Update balance
