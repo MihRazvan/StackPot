@@ -4,16 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node run-tests.js",
-    "test:vitest": "vitest run",
-    "test:watch": "vitest",
-    "console": "clarinet console"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "devDependencies": {
-    "@hirosystems/clarinet-sdk": "^2.6.0",
-    "@stacks/transactions": "^6.13.0",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.0",
+    "@hirosystems/clarinet-sdk": "^2.3.2",
+    "@stacks/transactions": "^6.12.0",
     "vitest": "^1.3.0"
   }
 }

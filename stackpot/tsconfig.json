@@ -15,7 +15,7 @@
   },
   "include": [
     "tests/**/*.ts",
-    "vitest.config.ts",
+    "vitest.config.js",
     "vitest-env.d.ts"
   ],
   "exclude": ["node_modules"]
